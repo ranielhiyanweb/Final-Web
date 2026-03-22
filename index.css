@@ -9,14 +9,14 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: #d2b48c; 
-    padding-top: 80px; /* Binawasan para hindi masyadong layo ang content */
+    padding-top: 80px; 
 }
 
 header {
     background-color: sienna;
     display: flex;
     padding: 15px 20px;
-    justify-content: space-between; /* Logo sa kaliwa, nav sa kanan */
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -30,7 +30,6 @@ header {
     font-weight: bold;
 }
 
-/* Desktop nav - laging nasa kanan */
 nav {
     display: flex;
     align-items: center;
@@ -39,7 +38,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 25px; /* Dagdag ng kaunting puwang sa pagitan ng links */
+    gap: 25px;
     font-size: 18px;
     margin: 0;
 }
@@ -56,7 +55,7 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
-/* Hamburger menu - itatago sa desktop */
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -72,10 +71,10 @@ nav ul li a:hover {
 }
 
 header img {
-    display: none; /* Itatago na lang ito palagi para hindi makagambala */
+    display: none; 
 }
 
-/* Hero Section - ibalik para makita */
+
 .hero {
     background: url(cover.jpg) no-repeat center center/cover;
     height: 400px;
@@ -106,7 +105,7 @@ header img {
     border-radius: 30px;
 }
 
-/* Content Section - ibalik */
+
 .content {
     display: flex;
     justify-content: center;
@@ -153,7 +152,7 @@ header img {
     color: #fff;
 }
 
-/* Works Section - ibalik lahat ng content */
+
 .works {
     padding: 30px 20px;
     display: flex;
@@ -194,16 +193,13 @@ header img {
     width: 100%;
 }
 
-.lover {
-    /* Palitan ng "Starry Night Over the Rhône" */
+.starry-night {
     background: url(pic1.jpeg) no-repeat center center/cover;
 }
-.reputation{
-    /* Palitan ng "Sunflowers" */
+.sunflower{
     background: url(pic2.jpeg) no-repeat center center/cover;
 }
-.showgirl {
-    /* Palitan ng "Café Terrace at Night" */
+.terrace {
     background: url(pic3.jpeg) no-repeat center center/cover;
 }
 
@@ -211,12 +207,12 @@ header img {
     color: white;
     font-size: 16px;
 }
-.reputation h1{
+.sunflower h1{
     color: black;
 }
 
 
-.lover, .reputation, .showgirl {
+.starry-night, .sunflower, .terrace {
     text-align: center;
     padding: 15px;
     border: 2px solid #333;
@@ -229,7 +225,7 @@ header img {
     display: block;
 }
 
-/* About Section - ibalik */
+
 .about {
     background-color: #8b5a2b;
     padding: 30px 20px;
@@ -281,7 +277,7 @@ header img {
     margin: 0;
 }
 
-/* Contact Section - ibalik */
+
 .contact {
     background: url(vangoghmuseum.jpg) no-repeat center center/cover;
     padding: 30px 20px;
@@ -350,7 +346,7 @@ footer p {
     bottom: 0%;
 }
 
-/* Mobile devices (hanggang 768px) */
+
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -387,7 +383,7 @@ footer p {
         max-width: 400px;
     }
 
-    .lover, .reputation, .showgirl {
+    .starry-night, .sunflower, .terrace {
         width: 100%;
         max-width: 300px;
     }
