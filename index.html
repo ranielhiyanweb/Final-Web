@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Artist</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Vincent van Gogh</div> <!-- Logo sa kaliwa -->
+        <nav> <!-- Nav sa kanan -->
+            <ul id="navMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#Biography">Biography</a></li>
+                <li><a href="#works">Masterpieces</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-text">
+            <h1>Vincent van Gogh</h1>
+            <p>The Artist Who Painted with Passion</p>
+            <a href="#Biography" class="btn">Explore His Art</a>
+        </div>
+    </main>
+
+    <section class="content" id="Biography">
+        <div class="Biography">
+            <h1>BIOGRAPHY</h1>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <h2>The Early Years (1853 - 1880) </h2>
+                <p>Born in the Netherlands, van Gogh worked as an art dealer and missionary before devoting himself fully to painting. Struggling with poverty and mental health, he found solace in creating art that captured the raw beauty of nature and human emotion.</p>
+            </div>
+            <div class="box2">
+                <h2>The Paris Period (1886-1888)</h2>
+                <p>In Paris, van Gogh met Impressionist painters like Monet and Renoir, who inspired him to use brighter colors and looser brushstrokes. This marked a major shift in his artistic style.</p>
+            </div>
+            <div class="box3">
+                <h2>The Final Chapter (1888-1890)</h2>
+                <p>In Arles and Saint-Rémy, van Gogh created his most famous works – including 'The Starry Night' and 'Sunflowers' – before his tragic death at 37. Today, he is celebrated as one of the greatest artists of all time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="works" id="works">
+        <div class="works-text">
+            <h1>MASTERPIECES</h1>
+            <p>Van Gogh's Iconic Works</p>
+        </div>
+        <div class="gallery">
+            <div class="albums">
+                <div class="lover">
+                    <h1>The Starry Night</h1>
+                </div>
+                <div class="reputation">
+                    <h1>Sunflowers</h1>
+                </div>
+                <div class="showgirl">
+                    <h1>Cafe Terrace at Night</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>A space dedicated to celebrating the life and works of Vincent van Gogh. Our mission is to share his most famous paintings and explore the impact of his art on the world. </p>
+                <p>Through this platform, we aim to inspire art lovers and educate visitors about van Gogh’s incredible contributions to modern art.</p>
+                <button>Read More</button>
+            </div>
+            <div class="about-image">
+                <img src="Talbums.jpg" alt="Taylor Swift Albums">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contacts">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>Have any questions or want to learn more about van Gogh's works? Feel free to reach out!</p>
+            <form>
+                <input type="text" placeholder="Your Name.." required>
+                <input type="email" placeholder="Your Email.." required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>vangoghmuseum.com</p>
+                <p>Phone: 09657987021</p>
+                <p>Address: Museumplein 6, Amsterdam, Netherlands</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Van Gogh Art Hub. All rights reserved. |Created by - Raniel|</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('#navMenu li a');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
