@@ -95,7 +95,7 @@
                 <input type="text" placeholder="Your Name.." required>
                 <input type="email" placeholder="Your Email.." required>
                 <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
+                <button id="send" type="submit">Send Message</button>
             </form>
             <div class="contact-info">
                 <p>vangoghmuseum.com</p>
@@ -123,6 +123,14 @@
                 navMenu.classList.remove('active');
             });
         });
+        
+        
+        let send = document.getElementById('send')
+        
+        send.addEventListener('click', () => {
+            alert("Message sent successfully! Thank you for reaching out to us.")
+        })
+        
     </script>
 </body>
 </html>
