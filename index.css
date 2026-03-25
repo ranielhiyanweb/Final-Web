@@ -118,6 +118,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
+    background: url(pic1.jpeg) no-repeat center center/cover;
 }
 
 .Biography h1 {
